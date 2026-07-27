@@ -1,7 +1,25 @@
 aid: instruct
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/instruct.png
 name: Instruct
-description: 'Instruct is a company surfaced as a portfolio company of creandum and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Instruct ("AI that works for you") is an AI automation platform that lets
+  non-technical users delegate repetitive work across their connected applications.
+  Users describe a task in natural language and Instruct''s AI pulls context from one
+  integrated app, acts on it in another, and can turn any successful one-off task into
+  a recurring scheduled workflow, spanning use cases across education, recruiting, sales,
+  and operations. It is a hosted end-user application with a free plan and Google/email
+  sign-up. As of this profile Instruct does not publish a public developer API, SDKs,
+  or developer documentation. Instruct is backed by Creandum.'
 url: https://raw.githubusercontent.com/api-evangelist/instruct/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
+- Automation
+- Agents
+- Productivity
+- Workflow
+- Integrations
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +48,20 @@ maintainers:
 common:
 - type: Website
   url: https://instruct.ai/
+- type: Blog
+  url: https://instruct.ai/blog
+- type: SignUp
+  url: https://instruct.ai/auth/register
+- type: Login
+  url: https://instruct.ai/auth
+- type: TermsOfService
+  url: https://legal.instruct.ai/eula
+- type: PrivacyPolicy
+  url: https://legal.instruct.ai/privacy
+- type: DomainSecurity
+  url: security/instruct-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
